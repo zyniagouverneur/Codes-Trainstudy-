@@ -96,6 +96,16 @@ Output.APMos_Tofirst=[ComOut(1).APMos_To(1,1) ComOut(1).APMos_To(1,2) ComOut(1).
 Output.APMos_first=[ComOut(1).APMos(1,1) ComOut(1).APMos(1,2) ComOut(1).APMos(2,1) ComOut(1).APMos(2,2) ComOut(1).APMos(3,1) ComOut(1).APMos(3,2)];% volgorde: [-3 -2 -1 pert +1 +2];
 Ouput.MaxXComAP_first=ComOut(1).MaxXComAP;
 
+% Toegevoegd door Zynia
+% selecteer de variabelen voor de voorlaatste (20) verstoring:
+Output.Reactietijd_20=ReactieTijd(20);
+Output.StapLengtes_20=[ComOut(20).StapLengtes(1,1) ComOut(20).StapLengtes(1,2) ComOut(20).StapLengtes(2,1) ComOut(20).StapLengtes(2,2) ComOut(20).StapLengtes(3,1) ComOut(20).StapLengtes(3,2)];
+Output.Stapduren_20=[ComOut(20).Stapduren(1,1) ComOut(20).Stapduren(1,2) ComOut(20).Stapduren(2,1) ComOut(20).Stapduren(2,2) ComOut(20).Stapduren(3,1) ComOut(20).Stapduren(3,2)];
+Output.APMos_To20=[ComOut(20).APMos_To(1,1) ComOut(20).APMos_To(1,2) ComOut(20).APMos_To(2,1) ComOut(20).APMos_To(2,2) ComOut(20).APMos_To(3,1) ComOut(20).APMos_To(3,2)];% volgorde: [-3 -2 -1 pert +1 +2];
+Output.APMos_20=[ComOut(20).APMos(1,1) ComOut(20).APMos(1,2) ComOut(20).APMos(2,1) ComOut(20).APMos(2,2) ComOut(20).APMos(3,1) ComOut(20).APMos(3,2)];% volgorde: [-3 -2 -1 pert +1 +2];
+Ouput.MaxXComAP_20=ComOut(20).MaxXComAP;
+% 
+
 % selecteer de variabelen voor de laatste verstoring:
 Output.Reactietijd_final=ReactieTijd(21);
 Output.StapLengtes_final=[ComOut(21).StapLengtes(1,1) ComOut(21).StapLengtes(1,2) ComOut(21).StapLengtes(2,1) ComOut(21).StapLengtes(2,2) ComOut(21).StapLengtes(3,1) ComOut(21).StapLengtes(3,2)];
